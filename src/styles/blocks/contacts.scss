@@ -1,0 +1,101 @@
+.contacts {
+  &__wrapper {
+    @include page-grid;
+
+    row-gap: 40px;
+
+    @include on-tablet {
+      row-gap: 64px;
+    }
+  }
+}
+
+.contact {
+  grid-column: 1 / -1;
+
+  @include on-tablet {
+    grid-column: 1 / 4;
+  }
+
+  @include on-desktop {
+    grid-column: span 7;
+  }
+
+  &--info {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 4 / 7;
+    }
+
+    @include on-desktop {
+      grid-column: span 3;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__input {
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    padding: 16px 14px;
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7e7e83;
+
+    @include on-tablet {
+      width: 288px;
+    }
+
+    @include on-desktop {
+      width: 411px;
+    }
+  }
+
+  &__textarea {
+    width: 280px;
+    height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 16px 14px;
+    margin-bottom: 32px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7e7e83;
+
+    @include on-tablet {
+      width: 288px;
+    }
+
+    @include on-desktop {
+      width: 411px;
+    }
+  }
+
+  &__info-item {
+    color: #fff;
+  }
+
+  &__info-label {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  &__info-value {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
