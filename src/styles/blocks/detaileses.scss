@@ -1,10 +1,10 @@
 .detaileses {
   &__wrapper {
     display: grid;
-    row-gap: 40px;
+    row-gap: $gap-vertical;
 
     @include on-tablet {
-      row-gap: 64px;
+      row-gap: $gap-tablet-vertical;
     }
   }
 }
@@ -12,7 +12,7 @@
 .details {
   @include page-grid;
 
-  row-gap: 16px;
+  row-gap: $spacing-xs;
 
   &__photos {
     @include page-grid;
@@ -65,14 +65,14 @@
   }
 
   &__title {
-    margin-bottom: 8px;
+    margin-bottom: $spacing-xxs;
     font-weight: 700;
-    font-size: 24px;
+    font-size: $font-size-xl;
   }
 
   &__text {
     margin: 0;
     font-weight: 400;
-    font-size: 16px;
+    font-size: $font-size-base;
   }
 }

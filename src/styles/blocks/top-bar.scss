@@ -1,17 +1,17 @@
 .top-bar {
-  padding-block: 24px;
+  padding-block: $top-bar-padding-mobile;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @include on-tablet {
-    padding-block: 64px;
+    padding-block: $top-bar-padding-tablet;
   }
 
   &__icons {
     display: flex;
-    gap: 24px;
+    gap: $spacing-s;
   }
 
   &__logo-link {
@@ -19,12 +19,12 @@
   }
 
   &__logo {
-    height: 38px;
+    height: $logo-height-mobile;
 
     @include hover(transform, scale(1.2));
 
     @include on-tablet {
-      height: 56px;
+      height: $logo-height-tablet;
     }
   }
 }

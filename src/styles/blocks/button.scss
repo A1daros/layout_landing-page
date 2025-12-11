@@ -1,35 +1,35 @@
 .button {
   cursor: pointer;
-  width: 278px;
-  height: 56px;
-  border-radius: 40px;
-  background-color: #fff;
-  color: #1d1d1d;
+  width: $button-width-mobile;
+  height: $button-height;
+  border-radius: $button-radius;
+  background-color: $white-color;
+  color: $main-text-color;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 27px;
+  font-size: $font-size-base;
+  line-height: $line-height-large;
   grid-column: 1 / -1;
   justify-self: center;
 
   @include on-tablet {
-    width: 392px;
+    width: $button-width-tablet;
   }
 
   @include on-desktop {
-    width: 324px;
+    width: $button-width-desktop;
   }
 
-  @include hover(box-shadow, 1px 4px 16px #e8e8f066);
+  @include hover(box-shadow, $shadow-hover);
 }
 
 .button--label {
-  width: 310px;
+  width: $button-label-width-mobile;
 
   @include on-tablet {
-    width: 320px;
+    width: $button-label-width-tablet;
   }
 
   @include on-desktop {
-    width: 440px;
+    width: $button-label-width-desktop;
   }
 }

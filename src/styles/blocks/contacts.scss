@@ -2,10 +2,10 @@
   &__wrapper {
     @include page-grid;
 
-    row-gap: 40px;
+    row-gap: $gap-vertical;
 
     @include on-tablet {
-      row-gap: 64px;
+      row-gap: $gap-tablet-vertical;
     }
   }
 }
@@ -40,77 +40,77 @@
   }
 
   &__input {
-    width: 280px;
-    margin-bottom: 16px;
+    width: $input-width-mobile;
+    margin-bottom: $spacing-xs;
 
-    color: #292929;
-    border: 1px solid #ccc;
-    border-radius: 40px;
-    padding: 16px 14px;
+    color: $input-text-color;
+    border: $border-thin solid $input-border-color;
+    border-radius: $input-radius-round;
+    padding: $input-padding;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
 
     @include on-tablet {
-      width: 288px;
+      width: $input-width-tablet;
     }
 
     @include on-desktop {
-      width: 411px;
+      width: $input-width-desktop;
     }
 
     &::placeholder {
-      color: #7e7e83;
+      color: $placeholder-color;
     }
   }
 
   &__textarea {
-    width: 280px;
-    height: 120px;
-    margin-bottom: 32px;
+    width: $input-width-mobile;
+    height: $textarea-height;
+    margin-bottom: $spacing-m;
 
-    color: #292929;
-    border: 1px solid #ccc;
-    border-radius: 16px;
-    padding: 16px 14px;
+    color: $input-text-color;
+    border: $border-thin solid $input-border-color;
+    border-radius: $input-radius-square;
+    padding: $input-padding;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
 
     @include on-tablet {
-      width: 288px;
+      width: $input-width-tablet;
     }
 
     @include on-desktop {
-      width: 411px;
+      width: $input-width-desktop;
     }
 
     &::placeholder {
-      color: #7e7e83;
+      color: $placeholder-color;
     }
   }
 
   &__info-item {
-    color: #fff;
+    color: $white-color;
   }
 
   &__info-label {
     font-weight: 400;
-    font-size: 14px;
-    margin-bottom: 8px;
+    font-size: $font-size-small;
+    margin-bottom: $spacing-xxs;
   }
 
   &__info-value {
     display: block;
     font-weight: 500;
-    font-size: 16px;
-    margin-bottom: 24px;
-    color: #fff;
+    font-size: $font-size-base;
+    margin-bottom: $spacing-s;
+    color: $white-color;
     text-decoration: none;
 
-    @include hover(color, #c2c2c2);
+    @include hover(color, $menu-bg-color);
   }
 }
 
@@ -130,6 +130,6 @@
 .contact__textarea:focus {
   outline: 0.5px solid #e8e8f066;
   outline-offset: 2px;
-  box-shadow: 0 0 0 4px #0080ff26;
+  box-shadow: 0 0 0 4px $focus-outline-color;
   transition: outline-color 0.2s ease, box-shadow 0.2s ease;
 }

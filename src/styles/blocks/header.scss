@@ -13,22 +13,22 @@
   &__title {
     margin: 0;
     font-weight: 700;
-    font-size: 36px;
+    font-size: $font-size-title-mobile;
     line-height: 100%;
-    letter-spacing: -1.5px;
+    letter-spacing: $letter-spacing-narrow;
     text-align: center;
-    color: #fff;
+    color: $white-color;
 
     @include on-tablet {
-      font-size: 64px;
+      font-size: $font-size-title-desktop;
     }
   }
 
   &__bottom {
-    padding: 88px;
+    padding: $header-bottom-padding-mobile;
 
     @include on-tablet {
-      padding-bottom: 130px;
+      padding-bottom: $header-bottom-padding-tablet;
     }
   }
 }

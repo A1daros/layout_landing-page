@@ -1,17 +1,17 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
-  background-color: #c2c2c2;
+  background-color: $menu-bg-color;
   font-weight: 600;
   text-transform: uppercase;
 
   &__top {
-    margin-bottom: 32px;
+    margin-bottom: $spacing-m;
 
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: #c2c2c2;
+    background-color: $menu-bg-color;
 
     @include on-tablet {
       margin-bottom: 0;
@@ -19,14 +19,14 @@
   }
 
   &__nav {
-    margin-bottom: 40px;
+    margin-bottom: $spacing-l;
   }
 
   &__phone-number {
     display: block;
-    margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 27px;
+    margin-bottom: $spacing-xs;
+    font-size: $font-size-base;
+    line-height: $line-height-large;
     color: $main-text-color;
     text-decoration: none;
   }
@@ -34,12 +34,12 @@
   &__book-a-test {
     display: block;
     width: fit-content;
-    padding-bottom: 8px;
-    border-bottom: 1px solid $main-text-color;
+    padding-bottom: $spacing-xxs;
+    border-bottom: $border-thin solid $main-text-color;
 
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 2px;
+    font-size: $font-size-tiny;
+    line-height: $line-height-small;
+    letter-spacing: $letter-spacing-wide;
     color: $main-text-color;
     text-decoration: none;
   }

@@ -1,15 +1,15 @@
 .icon {
   display: block;
-  height: 24px;
-  width: 24px;
+  height: $icon-size-mobile;
+  width: $icon-size-mobile;
   background-size: cover;
   background-position: center;
 
   @include hover(transform, scale(1.2));
 
   @include on-tablet {
-    height: 32px;
-    width: 32px;
+    height: $icon-size-tablet;
+    width: $icon-size-tablet;
   }
 
   &--phone {

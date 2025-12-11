@@ -1,14 +1,18 @@
 .main {
-  background-color: #1d1d1d;
+  background-color: $main-text-color;
 
   &__content {
     display: grid;
-    row-gap: 92px;
-    padding-block: 60px;
+    row-gap: $gap-main-mobile;
+    padding-block: $main-padding-mobile;
+
+    padding-bottom: $footer-height;
 
     @include on-tablet {
-      padding-block: 120px;
-      row-gap: 120px;
+      padding-block: $main-padding-tablet;
+      row-gap: $gap-main-tablet;
+
+      padding-bottom: $footer-height;
     }
   }
 }

@@ -13,20 +13,20 @@
     position: relative;
     color: $main-text-color;
     text-decoration: none;
-    font-size: 22px;
-    line-height: 22px;
-    letter-spacing: 2px;
+    font-size: $font-size-l;
+    line-height: $line-height-medium;
+    letter-spacing: $letter-spacing-wide;
 
     &::after {
       content: '';
       position: absolute;
-      bottom: -8px;
+      bottom: $nav-link-underline-offset;
       display: block;
-      height: 1px;
+      height: $border-thin;
       width: 100%;
       background-color: $main-text-color;
 
-      transition: transform 0.3s ease;
+      transition: transform $effectDuration ease;
       transform: scale(0);
       transform-origin: left;
     }
