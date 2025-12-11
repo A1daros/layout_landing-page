@@ -31,48 +31,48 @@
   &__link {
     position: relative;
 
-    @include hover(transform, scale(1.05));
+    @include hover(transform, $scale-xs);
 
     &--wide {
       @include on-tablet {
-        grid-column: span 4;
+        grid-column: $span-4;
       }
 
       @include on-desktop {
-        grid-column: span 8;
+        grid-column: $span-8;
       }
     }
 
     &--square {
       height: 0;
-      padding-bottom: 100%;
+      padding-bottom: $ratio-square;
 
       @include on-tablet {
-        grid-column: span 2;
+        grid-column: $span-2;
       }
 
       @include on-desktop {
-        grid-column: span 4;
+        grid-column: $span-4;
       }
     }
   }
 
   &__photo {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: $full-width;
+    height: $percent-full-height;
     object-fit: cover;
   }
 
   &__title {
     margin-bottom: $spacing-xxs;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     font-size: $font-size-xl;
   }
 
   &__text {
     margin: 0;
-    font-weight: 400;
+    font-weight: $font-weight-regular;
     font-size: $font-size-base;
   }
 }

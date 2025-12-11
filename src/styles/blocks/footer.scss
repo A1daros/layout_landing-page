@@ -2,10 +2,9 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: $full-width;
   height: $footer-height;
-
-  z-index: -1;
+  z-index: $z-index-low;
 
   background-image: url(../images/footer-bg.png);
   background-size: cover;

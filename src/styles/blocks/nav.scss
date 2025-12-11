@@ -6,7 +6,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: $spacing-m;
   }
 
   &__link {
@@ -15,7 +15,7 @@
     text-decoration: none;
     font-size: $font-size-l;
     line-height: $line-height-medium;
-    letter-spacing: $letter-spacing-wide;
+    letter-spacing: $letter-wide;
 
     &::after {
       content: '';
@@ -23,7 +23,7 @@
       bottom: $nav-link-underline-offset;
       display: block;
       height: $border-thin;
-      width: 100%;
+      width: $full-width;
       background-color: $main-text-color;
 
       transition: transform $effectDuration ease;

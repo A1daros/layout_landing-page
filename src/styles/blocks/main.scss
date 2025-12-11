@@ -6,13 +6,19 @@
     row-gap: $gap-main-mobile;
     padding-block: $main-padding-mobile;
 
-    padding-bottom: $footer-height;
+    position: relative;
+    z-index: $z-index-base;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0 0 $footer-height;
+      z-index: $z-index-low;
+    }
 
     @include on-tablet {
       padding-block: $main-padding-tablet;
       row-gap: $gap-main-tablet;
-
-      padding-bottom: $footer-height;
     }
   }
 }

@@ -21,7 +21,7 @@
   &__logo {
     height: $logo-height-mobile;
 
-    @include hover(transform, scale(1.2));
+    @include hover(transform, $scale-m);
 
     @include on-tablet {
       height: $logo-height-tablet;

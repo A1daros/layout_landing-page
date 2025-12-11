@@ -9,7 +9,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>Take the Streets</title>
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -37,7 +37,10 @@
       defer
     ></script>
   </head>
-  <body class="page__body">
+  <body
+    class="page__body"
+    id="top"
+  >
     <header class="header">
       <div class="container">
         <div class="header__content">
@@ -77,7 +80,7 @@
       <div class="container">
         <div class="top-bar menu__top">
           <a
-            href="#"
+            href="#top"
             class="top-bar__logo"
           >
             <img
@@ -365,7 +368,7 @@
                       type="text"
                       id="name"
                       class="contact__input"
-                      placeholder="Name"
+                      placeholder="John Smith"
                       required
                     />
                   </div>
@@ -380,7 +383,7 @@
                       type="email"
                       id="email"
                       class="contact__input"
-                      placeholder="Email"
+                      placeholder="example@gmail.com"
                       required
                     />
                   </div>
@@ -394,7 +397,7 @@
                     <textarea
                       id="message"
                       class="contact__textarea"
-                      placeholder="Message"
+                      placeholder="Your message..."
                       required
                     ></textarea>
                   </div>

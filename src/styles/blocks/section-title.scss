@@ -2,16 +2,16 @@
   margin: 0;
   margin-bottom: $spacing-xxl;
 
-  font-weight: 500;
+  font-weight: $font-weight-medium;
   font-size: $font-size-xxl-mobile;
-  line-height: 32px;
+  line-height: $line-height-extra-large;
   text-align: center;
-  letter-spacing: -1.5px;
+  letter-spacing: $letter-narrow;
 
   @include on-tablet {
     margin-bottom: $spacing-xxl;
     font-size: $font-size-xxl-tablet;
-    line-height: 100%;
+    line-height: $line-height-static;
   }
 
   @include on-desktop {
