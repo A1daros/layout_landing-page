@@ -41,15 +41,16 @@
 
   &__input {
     width: 280px;
+    margin-bottom: 16px;
+
+    color: #292929;
     border: 1px solid #ccc;
     border-radius: 40px;
     padding: 16px 14px;
-    margin-bottom: 16px;
 
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #7e7e83;
 
     @include on-tablet {
       width: 288px;
@@ -57,21 +58,26 @@
 
     @include on-desktop {
       width: 411px;
+    }
+
+    &::placeholder {
+      color: #7e7e83;
     }
   }
 
   &__textarea {
     width: 280px;
     height: 120px;
+    margin-bottom: 32px;
+
+    color: #292929;
     border: 1px solid #ccc;
     border-radius: 16px;
     padding: 16px 14px;
-    margin-bottom: 32px;
 
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #7e7e83;
 
     @include on-tablet {
       width: 288px;
@@ -79,6 +85,10 @@
 
     @include on-desktop {
       width: 411px;
+    }
+
+    &::placeholder {
+      color: #7e7e83;
     }
   }
 
@@ -97,5 +107,29 @@
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 24px;
+    color: #fff;
+    text-decoration: none;
+
+    @include hover(color, #c2c2c2);
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+  outline: 0.5px solid #e8e8f066;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px #0080ff26;
+  transition: outline-color 0.2s ease, box-shadow 0.2s ease;
 }
