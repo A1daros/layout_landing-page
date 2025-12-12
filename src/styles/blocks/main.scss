@@ -9,6 +9,8 @@
     position: relative;
     z-index: $z-index-base;
 
+    margin-bottom: $footer-height;
+
     &::after {
       content: '';
       position: absolute;

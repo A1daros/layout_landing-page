@@ -27,4 +27,24 @@
       height: $logo-height-tablet;
     }
   }
+
+  &__phone-text {
+    display: none;
+
+    @include on-desktop {
+      display: block;
+      position: absolute;
+      white-space: nowrap;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) translateX(-35%);
+      opacity: $opacity-hidden;
+      font-weight: $font-weight-semi-bold;
+      font-size: $font-size-base;
+      color: $white-color;
+      transition:
+        opacity $duration-base ease,
+        transform $duration-base ease;
+    }
+  }
 }

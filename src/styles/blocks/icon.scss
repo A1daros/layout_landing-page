@@ -13,7 +13,26 @@
   }
 
   &--phone {
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
     background-image: url(../images/icons/icon-phone.svg);
+    background-size: $icon-size-tablet;
+    background-position: right center;
+    background-repeat: no-repeat;
+    width: $icon-size-tablet;
+    height: $icon-size-tablet;
+    text-decoration: none;
+    color: $white-color;
+
+    @include on-desktop {
+      &:hover {
+        .top-bar__phone-text {
+          opacity: $opacity-visible;
+        }
+      }
+    }
   }
 
   &--menu {

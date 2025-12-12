@@ -130,6 +130,7 @@
 
 .contact__input:focus,
 .contact__textarea:focus {
+  outline: none;
   outline: $border-hairline solid $shadow-hover;
   outline-offset: $outline-offset-base;
   box-shadow: 0 0 0 $outline-shadow-size $focus-outline-color;
