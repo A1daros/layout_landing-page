@@ -18,13 +18,19 @@
     align-items: center;
     justify-content: flex-end;
     background-image: url(../images/icons/icon-phone.svg);
-    background-size: $icon-size-tablet;
+    background-size: $icon-size-mobile;
     background-position: right center;
     background-repeat: no-repeat;
-    width: $icon-size-tablet;
-    height: $icon-size-tablet;
+    width: $icon-size-mobile;
+    height: $icon-size-mobile;
     text-decoration: none;
     color: $white-color;
+
+    @include on-tablet {
+      background-size: $icon-size-tablet;
+      width: $icon-size-tablet;
+      height: $icon-size-tablet;
+    }
 
     @include on-desktop {
       &:hover {
